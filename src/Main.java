@@ -1,7 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        final int NUM_AUTOMOBILI = 4; // Definito all'interno del main
+        /*
+         * sono sufficienti 4 automobili nella 4 direzioni diverse 
+         * per simulare un deadlock, ma è possibile sperimentare
+         * con un numero diverso di automobili
+         */
+        final int NUM_AUTOMOBILI = 4;
         final Provenienza[] PROVENIENZE = { Provenienza.NORD, Provenienza.EST, Provenienza.SUD, Provenienza.OVEST }; // Definito all'interno del main
 
         final Incrocio INCROCIO = new Incrocio(); // Costante final per l'oggetto incrocio

@@ -19,6 +19,11 @@ public class Incrocio {
     }
 
     public synchronized void attraversa(final Provenienza PROVENIENZA) throws InterruptedException {
+        /* 
+         * si suppone che le automobili procedano dritte o girino a sinistra
+         * all'incrocio. Pertanto devono assicurarsi che non ci siano auto alla loro
+         * destra alle quali debbano dare precedenza
+         */
         final int INDICE_PROVENIENZA_DESTRA = (PROVENIENZA.getValore() + 3) % 4; // Provenienza alla destra
         while (ACCESSO[INDICE_PROVENIENZA_DESTRA] == OCCUPATO || attraversamento == OCCUPATO) {
             wait(); // Aspetta finché ci sono auto provenienti da destra o in fase di attraversamento
