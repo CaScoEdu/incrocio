@@ -5,6 +5,8 @@ public class Main {
          * sono sufficienti 4 automobili nella 4 direzioni diverse 
          * per simulare un deadlock, ma è possibile sperimentare
          * con un numero diverso di automobili
+         * 
+         * ovviamente riducendo il numero a 3 non si genera uno stallo
          */
         final int NUM_AUTOMOBILI = 3;
         final Provenienza[] PROVENIENZE = { Provenienza.NORD, Provenienza.EST, Provenienza.SUD, Provenienza.OVEST }; // Definito all'interno del main
