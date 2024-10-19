@@ -6,7 +6,7 @@ public class Main {
          * per simulare un deadlock, ma è possibile sperimentare
          * con un numero diverso di automobili
          */
-        final int NUM_AUTOMOBILI = 4;
+        final int NUM_AUTOMOBILI = 3;
         final Provenienza[] PROVENIENZE = { Provenienza.NORD, Provenienza.EST, Provenienza.SUD, Provenienza.OVEST }; // Definito all'interno del main
 
         final Incrocio INCROCIO = new Incrocio(); // Costante final per l'oggetto incrocio
